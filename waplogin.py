@@ -9,8 +9,8 @@ urllib2.install_opener(opener)
 #登录新浪通行证
 page=opener.open("http://3g.sina.com.cn/prog/wapsite/sso/login.php")
 data=page.read()
-mobile="903218171@qq.com"    #微博登陆邮箱
-pwd="mabin150750"          #密码
+mobile="xxxxxx@qq.com"    #微博登陆邮箱
+pwd="xxxxxxxxx"          #密码
 # 找到页面的password 和 vk 的值，后边POST时候要用
 password=re.findall('<postfield name="([\S]*)" value="\$\(password\)" />',data)[0]
 vk=re.findall('<postfield name="vk" value="([\S]*)" />',data)[0]
